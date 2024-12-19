@@ -1,0 +1,109 @@
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Style the container */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Style the left section */
+.left {
+  flex: 1;
+  background-image: url("images/signupsoap.jpg");
+  background-size: cover;
+}
+
+/* Style the right section */
+.right {
+  flex: 1;
+  padding: 40px;
+}
+
+/* Style the sign up form */
+.form {
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Style the input fields */
+input[type=text], input[type=email], input[type=tel], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Style the submit button */
+.btn {
+    background-color: #81918a;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 30px;
+}
+
+/* Add a hover effect for buttons */
+.btn:hover {
+    opacity:.8
+}
+a{
+    text-decoration: none;
+    color:#81918a;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<div class="left"></div>
+<div class="right">
+<form action="/action_page.php" method="post" class="form">
+<h1><b>Sign Up</b></h1>
+<p><i>Fill in the details to create an account.</i></p>
+<hr>
+
+<label for="email"><b>Email</b></label>
+<input type="email" placeholder="Enter Email" name="email" id="email" required>
+
+<label for="phone"><b>Phone Number</b></label>
+<input type="tel" placeholder="Enter Phone Number" name="phone" id="phone" required>
+
+<label for="username"><b>Username</b></label>
+<input type="text" placeholder="Enter Username" name="username" id="username" required>
+
+<label for="firstname"><b>First Name</b></label>
+<input type="text" placeholder="Enter Full Name" name="fullname" id="fullname" required>
+
+<label for="lastname"><b>Last Name</b></label>
+<input type="text" placeholder="Enter Full Name" name="fullname" id="fullname" required>
+
+<label for="password"><b>Password</b></label>
+<input type="password" placeholder="Enter Password" name="password" id="password" required>
+
+<button type="submit" class="btn">Sign Up</button>
+</form>
+<p><b>Already have an account?<a href="login.html"><i>Log In</i></a></b></p>
+</div>
+</div>
+
+</body>
+</html>

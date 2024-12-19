@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Amiri';
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 15% 10%;
+}
+
+/* home */
+
+.home{
+    width: 100%;
+    height: 100%;
+    background-image:  url(images/herohome.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.home-bottom{
+    width: 100%;
+    height: 100%;
+    background-image: url(images/herohomebtm.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.home-text h5{
+    color: #7F867B;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.home-text h1{
+    color: #223b05;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+
+.home-text p{
+    color: green;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.home-btn{
+    margin-top: 1%;
+    display: inline-block;
+    background: #345c07;
+    border: none; 
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 2px rgba(210, 215, 211);
+}
+
+.home-btn:hover{
+    background: #223b05;
+}
+
+.home-btn:active {
+    transform: scale(0.95); 
+}
+
+/* collections cards */
+
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.product-category {
+    padding: 0 10vw;
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+}
+
+.products {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.products::-webkit-scrollbar {
+    display: none;
+}
+  
+.product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 120px;
+    margin-left: 40px;
+
+}
+  
+.product-image img {
+    position: relative;
+    transition: all .30s ease;
+    max-width: 300px;
+    max-height: 300px; 
+    overflow: hidden;
+}
+  
+.product-image img:hover{
+    transform: scale(0.95);
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.product-info h5 {
+    font-size: medium;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-weight: lighter;
+    
+}
+  
+.product-info h6 {
+    margin-top: 0px;
+    font-size: large;
+    font-weight: bold;
+    text-align: start;
+    padding-bottom: 0px;
+}
+  
+.product-card a {
+    cursor: grab;
+  
+}
+
+.pre-btn,
+.nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.home-text-bottom h1{
+    color: #223b05;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+
+.home-text-bottom p{
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* client section */
+
+.our-clients{
+    padding: 0 10vw;
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+}
+
+.clients{
+    padding-left: 500px;
+    padding-right: 500px;
+}
+
+.client-list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.client-image img{
+    width: 150px;
+  }
+
+@media screen and (max-width: 1580px) {
+    /* This code will apply when the screen width is less than or equal to 768px */
+    
+    /* Make images responsive */
+    .clients{
+        padding-left: 0;
+        padding-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    /* This code will apply when the screen width is less than or equal to 768px */
+    
+    /* Make images responsive */
+    .client-list{
+        display: grid;
+  
+    }
+  }

@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Amiri';
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  } 
+  
+section{
+    padding: 5% 10%;
+  }
+  
+/* contact FAQ */
+
+.creator-img{
+  padding: 0 10vw;
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+  text-transform: capitalize;
+}
+
+h1{
+  padding: 0 10vw;
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+  text-transform: capitalize;
+
+}
+
+.image img{
+    margin-top: 60px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.shop-btn {
+    /* background: #345c07; pink background 
+    border: none; remove default border 
+    color: white; white text 
+    font-size: 20px; large font size 
+    padding: 15px 25px;  add some space around the text 
+    border-radius: 10px; round corners 
+    box-shadow: 3px 8px 2px rgba(210, 215, 211); */
+    margin-top: 1%;
+    display: inline-block;
+    background: #345c07;
+    border: none; 
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 2px rgba(210, 215, 211);
+}
+
+.shop-btn:hover {
+    background: #223b05; /* darker pink on hover */
+}
+
+.shop-btn:active {
+    transform: scale(0.95); /* slightly shrink on click */
+}
+
+.picture {
+    /* Set the width and height of the image */
+    width: 300px;
+    height: 200px;
+    /* Apply an animation to the image */
+    animation: fade-in 3s ease-in-out;
+  }
+  
+  /* Define a keyframes rule for fade-in animation */
+  @keyframes fade-in {
+    /* Start with opacity 0 (invisible) */
+    0% {
+      opacity: 0;
+    }
+    /* End with opacity 1 (visible) */
+    100% {
+      opacity: 1;
+    }
+  }
+  /*Floating Back-To-Top Button*/
+  #myBtn {
+    position: fixed;
+    bottom: 20px;
+    float: right;
+    right: 18.5%;
+    left: 95.25%;
+    max-width: 30px;
+    width: 100%;
+    font-size: 18px;
+    border-color: rgba(85, 85, 85, 0.2);
+    background-color:#81918a;
+    padding: .5px;
+    border-radius: 25px;
+    }
+/*On Hover Color Change*/
+#myBtn:hover {
+    background-color: #3A4E31;
+}
